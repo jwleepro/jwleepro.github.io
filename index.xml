@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on </title>
+    <link>/</link>
+    <description>Recent content in Programming on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Jun 2020 14:04:37 +0900</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Content</title>
+      <link>/programming/first-content/</link>
+      <pubDate>Mon, 22 Jun 2020 14:04:37 +0900</pubDate>
+      
+      <guid>/programming/first-content/</guid>
+      <description>Chapter 2 Some Chapter title Lorem Ipsum.</description>
+    </item>
+    
+  </channel>
+</rss>
