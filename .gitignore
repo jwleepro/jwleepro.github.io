@@ -1,0 +1,40 @@
+# Jekyll 빌드 결과물
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby 관련
+*.gem
+.bundle
+vendor/bundle/
+Gemfile.lock
+
+# 로그 파일
+*.log
+
+# 임시 파일
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDE 설정 파일
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Windows 관련
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node.js (만약 사용한다면)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 환경 변수 파일
+.env
+.env.local

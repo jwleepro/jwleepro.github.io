@@ -17,9 +17,17 @@ tags: [github, jekyll, minimal-mistakes]
 # 1) GitHub Pages 계정 생성
 
 - GitHub 계정 만들기: https://github.com 에서 회원가입합니다.
-- 퍼블릭 사용자/조직 사이트 만들기(선택): 리포지토리 이름을 "<your-username>.github.io"로 생성하면 기본 사용자 페이지가 됩니다.
-  - 예: 내 사용자명이 jwleepro면 리포지토리 이름은 jwleepro.github.io
-- 리포지토리 생성 후 Settings > Pages 에서 브랜치(main 또는 gh-pages)를 선택하고 저장하여 Pages를 활성화합니다.
+- **새 리포지토리 생성하기**:
+  1. 우측 상단의 `+` 아이콘을 클릭하고 `New repository` 메뉴를 선택합니다.
+    ![GitHub Plus 메뉴](/assets/images/github_plus_menu.png)
+
+  2. **Repository name**: 반드시 `<본인아이디>.github.io` 형식으로 입력해야 합니다.
+     - 예시: 사용자명이 `jwleepro`라면 리포지토리 이름은 `jwleepro.github.io`여야 합니다.
+  3. **Public** (공개) 옵션을 선택합니다.
+  4. 하단의 `Create repository` 초록색 버튼을 클릭하여 생성합니다.
+    ![리포지토리 생성 예시](/assets/images/github_create_repo.png)
+  5. 리포지토리 생성 후 Settings > Pages 에서 브랜치(main 또는 gh-pages)를 선택하고 저장하여 Pages를 활성화합니다.
+    ![GitHub Pages 설정](/assets/images/github_pages_settings.png)
 
 # 2) _config.yml 파일 생성 후 Minimal Mistakes 테마 적용
 
