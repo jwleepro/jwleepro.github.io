@@ -1,8 +1,7 @@
 ---
 layout: home
-title: "개발 블로그"
+title: "Jiwon's Blog"
 list_title: "최신 포스트"
 ---
 
-안녕하세요! 반갑습니다. 
 이곳은 개발 관련 생각과 경험을 공유하는 공간입니다.
