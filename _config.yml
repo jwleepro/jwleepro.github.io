@@ -8,14 +8,18 @@ baseurl: ""
 # 한글 지원
 lang: ko-KR
 
+# 테마 설정
+minimal_mistakes_skin: default
+search: true
+
 # 플러그인 설정
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-include-cache
   - jekyll-feed
-  - jemoji
 
 # 포스트 설정
 paginate: 5
@@ -23,3 +27,4 @@ paginate_path: "/page:num/"
 
 # Markdown 설정
 markdown: kramdown
+highlighter: rouge
