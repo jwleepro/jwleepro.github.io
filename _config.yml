@@ -1,3 +1,16 @@
 theme: minimal-mistakes-jekyll
-title: Dev's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: jwleepro's Tech Blog
+description: 개인 포트폴리오 웹사이트 및 기술 블로그
+author: jwleepro
+url: https://jwleepro.github.io
+baseurl: ""
+
+# 한글 지원
+lang: ko-KR
+
+# 포스트 설정
+paginate: 5
+paginate_path: "/page:num/"
+
+# Markdown 설정
+markdown: kramdown
