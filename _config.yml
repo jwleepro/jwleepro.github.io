@@ -1,25 +1,13 @@
-remote_theme: mmistakes/minimal-mistakes-jekyll
-title: jwleepro's Tech Blog
-description: 개인 포트폴리오 웹사이트 및 기술 블로그
-author: jwleepro
-url: https://jwleepro.github.io
-baseurl: ""
+theme: minima
 
 # 한글 지원
 lang: ko-KR
 
-# 테마 설정
-minimal_mistakes_skin: default
-search: true
-
-# 플러그인 설정
+# 플러그인 설정 (GitHub Pages 기본 지원)
 plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-include-cache
   - jekyll-feed
+  - jekyll-sitemap
 
 # 포스트 설정
 paginate: 5
