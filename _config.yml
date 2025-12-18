@@ -1,4 +1,4 @@
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes-jekyll
 title: jwleepro's Tech Blog
 description: 개인 포트폴리오 웹사이트 및 기술 블로그
 author: jwleepro
@@ -7,6 +7,15 @@ baseurl: ""
 
 # 한글 지원
 lang: ko-KR
+
+# 플러그인 설정
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
 # 포스트 설정
 paginate: 5
