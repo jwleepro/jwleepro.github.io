@@ -1,0 +1,235 @@
+/* ==========================================================================
+   이력서 PDF 스타일 커스터마이징
+   ========================================================================== */
+
+/* 전체 레이아웃 */
+body {
+  font-family: 'Noto Sans CJK KR', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #333;
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 15mm 20mm;
+  background-color: #fff;
+}
+
+/* 제목 스타일 */
+h1 {
+  color: #1a1a1a;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  border-bottom: 4px solid #2563eb;
+  padding-bottom: 0.3em;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3em;
+  padding-top: 0.2em;
+}
+
+h3 {
+  color: #374151;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+h4 {
+  color: #4b5563;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+/* 링크 스타일 */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px solid #93c5fd;
+}
+
+a:hover {
+  color: #1d4ed8;
+  border-bottom-color: #2563eb;
+}
+
+/* 강조 텍스트 */
+strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+em {
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* 리스트 스타일 */
+ul {
+  margin-left: 1.5em;
+  margin-bottom: 0.8em;
+  padding-left: 0;
+}
+
+ol {
+  margin-left: 1.5em;
+  margin-bottom: 0.8em;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.4em;
+  line-height: 1.7;
+}
+
+/* 중첩된 리스트 */
+li ul,
+li ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* 코드 스타일 */
+code {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  border: 1px solid #e5e7eb;
+}
+
+pre {
+  background-color: #f9fafb;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.85em;
+}
+
+/* 인용구 */
+blockquote {
+  border-left: 4px solid #2563eb;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #4b5563;
+  font-style: italic;
+  background-color: #f9fafb;
+  padding: 0.8em 1em;
+  margin: 1em 0;
+}
+
+/* 구분선 */
+hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 2em 0;
+}
+
+/* 단락 */
+p {
+  margin-bottom: 0.8em;
+  text-align: justify;
+}
+
+/* 표 스타일 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 0.95em;
+}
+
+th {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-weight: 600;
+  padding: 0.6em;
+  text-align: left;
+  border: 1px solid #d1d5db;
+}
+
+td {
+  padding: 0.6em;
+  border: 1px solid #e5e7eb;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* 페이지 브레이크 제어 */
+@media print {
+  /* 제목 다음에 페이지가 바뀌지 않도록 */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+  
+  /* 제목 앞에서 페이지가 바뀌지 않도록 (첫 제목 제외) */
+  h2, h3, h4 {
+    page-break-before: avoid;
+  }
+  
+  /* 리스트 아이템이 페이지 사이에서 분리되지 않도록 */
+  li {
+    page-break-inside: avoid;
+  }
+  
+  /* 단락이 페이지 사이에서 분리되지 않도록 */
+  p {
+    page-break-inside: avoid;
+  }
+  
+  /* 표가 페이지 사이에서 분리되지 않도록 */
+  table {
+    page-break-inside: avoid;
+  }
+  
+  /* 링크 URL 표시 안함 */
+  a[href]:after {
+    content: none;
+  }
+}
+
+/* 특수 클래스 */
+.contact-info {
+  font-size: 0.95em;
+  color: #4b5563;
+  margin-bottom: 1em;
+}
+
+.date-range {
+  color: #6b7280;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.skill-category {
+  margin-bottom: 0.5em;
+}
+
+/* 이모지 스타일 조정 */
+.emoji {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+}

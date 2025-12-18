@@ -1,0 +1,66 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'resume/resume.md'
+      - 'resume/resume-style.css'
+  pull_request:
+    paths:
+      - 'resume/resume.md'
+  workflow_dispatch:
+
+jobs:
+  build-resume:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Convert MD to PDF
+        uses: docker://pandoc/latex:latest
+        with:
+          args: >-
+            resume/resume.md
+            -o resume.pdf
+            --pdf-engine=xelatex
+            -V CJKmainfont="Noto Sans CJK KR"
+            -V geometry:margin=2cm
+            -V fontsize=11pt
+            --metadata title="이력서"
+      
+      - name: Convert MD to DOCX
+        uses: docker://pandoc/latex:latest
+        with:
+          args: >-
+            resume/resume.md
+            -o resume.docx
+            --metadata title="이력서"
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-${{ github.sha }}
+          path: |
+            resume.pdf
+            resume.docx
+          retention-days: 90
+      
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            resume.pdf
+            resume.docx
+          body: |
+            ## 📄 이력서
+            
+            자동 생성된 이력서 파일입니다.
+            
+            - `resume.pdf` - PDF 버전
+            - `resume.docx` - Microsoft Word 버전
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
