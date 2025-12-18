@@ -1,28 +1,8 @@
 ---
 layout: home
-title: "홈"
+title: "개발 블로그"
+list_title: "최신 포스트"
 ---
 
-# 👋 안녕하세요!
-
-개인 포트폴리오 웹사이트 및 자동화된 이력서 관리 시스템입니다.
-
-## 📝 최근 포스트
-
-<!-- Jekyll이 자동으로 최근 포스트를 표시합니다 -->
-
----
-
-## 📄 이력서 자동 생성
-
-마크다운으로 이력서를 작성하면 GitHub Actions가 자동으로 **PDF**와 **DOCX**를 생성합니다.
-
-**👉 [상세 가이드 보기](docs/resume-automation.md)**
-
----
-
-## 🔗 링크
-
-- [GitHub 프로필](https://github.com/jwleepro)
-- [기술 블로그 포스트](/posts/)
-- [이력서 자동화 가이드](/docs/resume-automation)
+안녕하세요! 반갑습니다. 
+이곳은 개발 관련 생각과 경험을 공유하는 공간입니다.

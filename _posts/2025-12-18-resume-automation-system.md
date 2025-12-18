@@ -1,4 +1,9 @@
-# 📄 이력서 자동 생성 시스템
+---
+layout: post
+title:  "이력서 자동 생성 시스템 구축하기"
+date:   2025-12-18 13:30:00 +0900
+categories: [Automation, GitHub Actions]
+---
 
 > 마크다운으로 이력서를 작성하면 GitHub Actions가 자동으로 PDF와 DOCX를 생성합니다.
 
