@@ -5,4 +5,4 @@
 - 개발이야기
 - 문서작성
 - 일정관리
-- [github 사용법](github)
+- [github 사용법](github/index.md)
