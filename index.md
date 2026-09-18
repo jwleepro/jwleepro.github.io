@@ -2,7 +2,7 @@
 정리하는 방법부터 배웁니다.
 
 ## 주제
-- 개발이야기
+- [개발이야기](programming/index.md)
 - [문서작성](document_manage/index.md)
 - 일정관리
 - [github 사용법](github/index.md)
