@@ -9,12 +9,11 @@
 
 2. 독자가 읽고 나서 무엇을 이해해야 하는지 정한다.
    > Data Warehouse와 Data Lake는 왜 따로 존재하는가? 와 같은 질문을 4개만 만들어 보자
-   > 
-   > 둘 다 데이터를 저장하는데 왜 Data Warehouse와 Data Lake를 구분해서 사용하는가?
-   1. Data Warehouse, Data Lake는 어떤 상황에서 필요한가?
-   2. Data Warehouse, Data Lake를 같이 사용할 수 있는가?
-   3. Data Warehouse와 Data Lake는 각각 무엇을 잘하고 무엇을 잘하지 못하는가?
-   4. 운영 DB, Data Warehouse, Data Lake를 함께 사용하는 간단한 예시는 무엇인가?
+   1. 둘 다 데이터를 저장하는데 왜 Data Warehouse와 Data Lake를 구분해서 사용하는가?
+   2. Data Warehouse, Data Lake는 어떤 상황에서 필요한가?
+   3. Data Warehouse, Data Lake를 같이 사용할 수 있는가?
+   4. Data Warehouse와 Data Lake는 각각 무엇을 잘하고 무엇을 잘하지 못하는가?
+   5. 운영 DB, Data Warehouse, Data Lake를 함께 사용하는 간단한 예시는 무엇인가?
 <br>
 
 3. 조사한 자료에서 핵심 질문을 뽑는다.
@@ -22,8 +21,12 @@
    1. 둘 다 데이터를 저장하는데 왜 Data Warehouse와 Data Lake를 구분해서 사용하는가?
 
       **답변:**  
-      Data Warehouse는 분석하기 좋은 형태로 정리된 데이터를 저장하고,  
-      Data Lake는 다양한 형태의 원본 데이터를 그대로 저장한다.
+        [내가 생각하는 핵심 답]  
+      Data Warehouse는 사전에 사용 목적과 구조를 정하고 저장해서 조회나 분석에 강점이 있고,  
+      Data Lake는 다양한 형태의 데이터를 먼저 저장하고, 나중에 사용 목적과 구조를 결정할 수 있다.  
+      따라서 서로 다른 목적에 최적화되어 있기 때문에 구분해서 사용한다.  
+        [설명에 필요한 내용]
+      
  
 ---
 ## 참고자료
