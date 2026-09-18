@@ -1,4 +1,4 @@
-글쓰기 기본 형식: [글 작성 기초 과정](https://jwleepro.github.io/document_manage/writing_simple_bestpractice.html)
+초안 작성 참고: [글쓰기 초안 작성하기](https://jwleepro.github.io/document_manage/writing_simple_bestpractice.html)
 
 # 데이터 웨어하우스(Data Warehouse)와 데이터 레이크(Data Lake)
 1. 글의 목적을 한 문장으로 정한다.
