@@ -1,4 +1,4 @@
-[글 작성 기초 과정](https://jwleepro.github.io/document_manage/writing_simple_bestpractice.html)
+[글 작성 기초 과정][1]
 
 # 데이터 웨어하우스(Data Warehouse)와 데이터 레이크(Data Lake)
 1. 글의 목적을 한 문장으로 정한다.
@@ -15,3 +15,6 @@
   5. 운영 DB, Data Warehouse, Data Lake를 함께 사용하는 간단한 예시는 무엇인가?
 
 3. 조사한 자료에서 핵심 질문을 뽑는다.
+
+## 참고자료
+[1]: https://jwleepro.github.io/document_manage/writing_simple_bestpractice.html
